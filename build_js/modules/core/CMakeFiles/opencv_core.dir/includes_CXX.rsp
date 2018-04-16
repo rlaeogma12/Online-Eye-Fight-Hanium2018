@@ -1,0 +1,1 @@
+-isystem /home/lefti/workplace/build_js -I/home/lefti/workplace/emsdk/opencv/modules/core/include -I/home/lefti/workplace/build_js/modules/core -I/home/lefti/workplace/emsdk/opencv/3rdparty/zlib -I/home/lefti/workplace/build_js/3rdparty/zlib 
