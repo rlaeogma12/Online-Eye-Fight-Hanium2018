@@ -1,1 +1,0 @@
--isystem /home/lefti/workplace/build_js -I/home/lefti/workplace/emsdk/opencv/modules/objdetect/include -I/home/lefti/workplace/build_js/modules/objdetect -I/home/lefti/workplace/emsdk/opencv/modules/core/include -I/home/lefti/workplace/emsdk/opencv/modules/imgproc/include 
