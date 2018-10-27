@@ -50,8 +50,8 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void run() {
                 builder.setTitle("경기결과");
-                builder.setMessage("패배했습니다");
-                builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
+                builder.setMessage("아쉽게도 패배했습니다");
+                builder.setPositiveButton("대기화면으로 돌아가기", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(getApplicationContext(),RoomActivity.class);
