@@ -11,9 +11,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
+    SharedPreferences nickname;
     ImageButton imageButton_confirm, imageButton_change, Button_back;
     ImageView imageview_user;
-    TextView textView_ID, textView_char, textView_record;
+    TextView textView_ID, textView_char, textView_record, player1name;
     int cnt;
 
     // cnt를 그러면 sharedpreference로 만들어야하나? -> 성제오빠 코드랑 비교해서 물어보기
@@ -40,6 +41,9 @@ public class ProfileActivity extends AppCompatActivity {
             
         }
 
+        nickname = getSharedPreferences("nickname", MODE_PRIVATE);
+        TextView player1name = (TextView)findViewById(R.id.player1name);
+        player1name.setText(nickname.getString("nickname",""));
 
         imageButton_change.setOnClickListener(new View.OnClickListener() {
             @Override

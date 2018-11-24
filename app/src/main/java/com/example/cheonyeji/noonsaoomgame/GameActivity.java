@@ -122,7 +122,6 @@ public class GameActivity extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"3번 아이템이 클릭되었습니다.",Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 

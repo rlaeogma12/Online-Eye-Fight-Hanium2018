@@ -18,7 +18,7 @@ public class RoomActivity extends AppCompatActivity {
 
     //사용하는 요소 선언
     ListView RoomList;
-    ImageButton Button_ch, Button_makeRoom, Button_setting, Button_quickStart, Button_send;
+    ImageButton Button_ch, Button_makeRoom, Button_setting, Button_send;
     ArrayList<String> rooms;
     SharedPreferences roomname;
 
@@ -69,7 +69,6 @@ public class RoomActivity extends AppCompatActivity {
 
         Button_makeRoom = this.findViewById(R.id.Button_makeRoom);
         Button_setting = this.findViewById(R.id.Button_setting);
-        Button_quickStart = this.findViewById(R.id.Button_quickStart);
         Button_send = this.findViewById(R.id.Button_send);
 
         Button_makeRoom.setOnClickListener(new View.OnClickListener() {

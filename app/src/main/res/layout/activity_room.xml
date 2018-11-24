@@ -85,26 +85,6 @@
         app:srcCompat="@drawable/settings" />
 
     <ImageButton
-        android:id="@+id/Button_quickStart"
-        android:layout_width="58dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/RoomList"
-        app:layout_constraintEnd_toStartOf="@+id/logoimage"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/Button_setting"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
-        app:srcCompat="@drawable/quick" />
-
-    <ImageButton
         android:id="@+id/Button_send"
         android:layout_width="86dp"
         android:layout_height="39dp"
