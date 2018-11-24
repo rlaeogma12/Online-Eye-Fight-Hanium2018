@@ -62,7 +62,7 @@ public class RoomActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Toast.makeText(getApplicationContext(),"방이 클릭되었습니다",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(),GameActivity.class);
+                Intent intent = new Intent(getApplicationContext(),LobbyActivity.class);
                 startActivity(intent);
             }
         });
