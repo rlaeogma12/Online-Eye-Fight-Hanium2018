@@ -7,21 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import java.time.chrono.Era;
 import java.util.ArrayList;
 
 public class RoomActivity extends AppCompatActivity {
 
     //사용하는 요소 선언
     ListView RoomList;
-    ImageButton Button_ch, Button_makeRoom, Button_setting, Button_quickStart, Button_send;
+    ImageButton Button_ch, Button_makeRoom, Button_setting, Button_send;
     ArrayList<String> rooms;
     SharedPreferences roomname;
 
@@ -70,10 +67,8 @@ public class RoomActivity extends AppCompatActivity {
             }
         });
 
-        Button_ch = this.findViewById(R.id.Button_ch);
         Button_makeRoom = this.findViewById(R.id.Button_makeRoom);
         Button_setting = this.findViewById(R.id.Button_setting);
-        Button_quickStart = this.findViewById(R.id.Button_quickStart);
         Button_send = this.findViewById(R.id.Button_send);
 
         Button_makeRoom.setOnClickListener(new View.OnClickListener() {

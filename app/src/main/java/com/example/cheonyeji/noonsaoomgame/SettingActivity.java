@@ -1,5 +1,7 @@
 package com.example.cheonyeji.noonsaoomgame;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +28,49 @@ public class SettingActivity extends AppCompatActivity {
         Button_logout = this.findViewById(R.id.Button_logout);
         Button_back = this.findViewById(R.id.Button_back);
 
+        // 다이얼로그
+        final AlertDialog.Builder notice = new AlertDialog.Builder(SettingActivity.this);
+        notice.setTitle("공지사항");
+        notice.setMessage("현재 version 0.1이며 차후 다양한 기능이 개발될 예정입니다");
+        notice.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
 
+        final AlertDialog.Builder contact = new AlertDialog.Builder(SettingActivity.this);
+        contact.setTitle("Contact Us");
+        contact.setMessage("성균관대학교 컴퓨터교육과 Eyetech\n김대흠\n이성제\n천예지 ssaltuck@gmail.com");
+        contact.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        Button_notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notice.show();
+            }
+        });
+
+        Button_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                contact.show();
+            }
+        });
+
+        Button_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Logout 버튼 클릭시 ID정보 삭제 & 로그인 화면 복귀
         Button_logout.setOnClickListener(new View.OnClickListener() {

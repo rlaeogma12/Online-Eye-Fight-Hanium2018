@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MakeNewRoom extends Activity {
-    ImageButton Button_unlock, Button_lock, Button_make;
+    ImageButton Button_unlock, Button_lock, Button_make, Button_back;
     EditText Password, Roomname;
 
     @Override
@@ -30,6 +30,7 @@ public class MakeNewRoom extends Activity {
         Button_unlock = this.findViewById(R.id.Button_unlock);
         Button_lock = this.findViewById(R.id.Button_lock);
         Button_make = this.findViewById(R.id.Button_make);
+        Button_back = this.findViewById(R.id.Button_back);
         Password = this.findViewById(R.id.password);
         Roomname = this.findViewById(R.id.roomname);
 
@@ -71,6 +72,14 @@ public class MakeNewRoom extends Activity {
                 editor2.commit();
 
                 Intent intent = new Intent(getApplicationContext(), RoomActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),RoomActivity.class);
                 startActivity(intent);
             }
         });
