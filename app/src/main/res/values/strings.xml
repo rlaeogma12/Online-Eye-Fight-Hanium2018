@@ -11,4 +11,6 @@
     <string name="password">방 암호를 입력하세요</string>
     <string name="vs">VS</string>
     <color name="white">#FFFFFF</color>
+
+    <string name="Lobby">Lobby</string>
 </resources>
